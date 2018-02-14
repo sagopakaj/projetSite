@@ -1,0 +1,539 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e1e1e1;
+    font-family: 'PT Sans', sans-serif;
+
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+h1, h2, p{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+/************** HEADER ***********/
+
+.sous-header{
+    display: flex;
+    justify-content: space-between;
+    background-color:#222;
+    padding: 30px 0;
+}
+.header-titre{
+    display: flex;
+    padding: 0 20px;
+
+}
+.header-titre h1{
+    color: #fff;
+    font-size: 2.7em;
+    margin-left: 5px;
+    font-weight: normal;
+}
+/**** NAV HEADER ****/
+
+.nav-header{
+    display: flex;
+    align-items:center;
+}
+.nav-header ul{
+    display: flex;
+
+}
+.nav-header a{
+    display: block;
+    padding: 0 30px;
+    color: #a9a9a9;
+    transition: color 0.3s ease;
+}
+.nav-header a:hover{
+    color: #fff;
+}
+
+/****** PARTIE CONNEXION  (HEADER ) **************/
+
+.connexion{
+    background-color:#333;
+}
+.connexion ul{
+    display: flex;
+}
+.connexion a{
+    color:#999;
+    padding:15px;
+}
+.connexion a:hover{
+    text-decoration: underline;
+}
+
+
+/****** CORPS ( PAGE ACCUEIL ) ******/
+.info{
+    text-align: center;
+    width: 63%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.info h1{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+.info p{
+    margin: 10px 0;
+}
+.conteneur{
+    padding:25px 0;
+}
+.gamme{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gamme-voiture img{
+    width: 60%;
+}
+.gamme-voiture{
+    width: 34%;
+    margin:0 0 5px 5px;
+    padding:15px 0;
+    background-color: #CCD4D3;
+    text-align: center;
+
+}
+.gamme-voiture li{
+    width: 50%;
+    padding: 10px;
+    background-color: #222;
+    color: #999;
+    margin: 15px auto 15px auto;
+}
+
+/************* CORPS ( PAGE PRODUITS) *************/
+.conteneur-produit{
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    width: 87%;
+}
+.section-produit{
+    width: 68%;
+}
+.article-produit{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    background-color: #CCD4D3;
+}
+
+.article-produit aside{
+    padding:20px 5px 10px 5px;
+    width: 35%;
+}
+.article-produit h2{
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}    
+
+.image-produit img{
+    width:65%;
+    display: block;
+     margin: 0 auto;
+}
+
+
+.section-info{
+    width: 30%;
+}
+.section-choix a{
+    display: block;
+    padding:15px 0 15px 40px;
+    background-color: #CCD4D3;
+    font-size: 1.3em;
+    color: #000;
+    font-variant: small-caps;
+    transition: all 0.2s ease;
+}
+.section-choix a:hover{
+    border-left: 5px solid #222;
+    padding: 15px 0 15px 43px;
+}
+
+/************* CORPS PAGE HISTOIRE **************/
+.conteneur-histoire{
+    width: 80%;
+    margin: 10px auto;
+}
+.titre-histoire h1{
+    text-align: center;
+    font-size: 2.7em;
+    background-color: #CCD4D3;
+    font-weight: normal;
+    font-variant: small-caps;
+}
+.image-histoire{
+    padding: 10px;
+    margin: 15px 0;
+    background-color: #CCD4D3;
+}
+.image-histoire img{
+    width: 100%;
+}
+.opel-histoire{
+    overflow: hidden;
+    padding:10px 35px;
+     background-color: #CCD4D3;
+}
+.opel-histoire h2{
+    border-bottom: 1px solid #222;
+    font-size: 2em;
+    font-variant: small-caps;
+}
+.opel-histoire img{
+    float: left;
+    margin: 5px 15px 8px 0;
+}
+
+/********* CORPS PAGE CONTACT ********/
+
+.conteneur-contact{
+    width: 80%;
+    margin: 0 auto;
+}
+.titre-contact h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    font-weight: normal;
+    border-bottom: 1px solid #222;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 15px 0;
+    
+}
+/*** FORMULAIRE ( PAGE CONTACT) ***/
+.formulaire{
+    padding: 25px 0;
+    width: 50%;
+    margin: 0 auto;
+}
+.formulaire p{
+    margin-bottom: 20px;
+}
+.formulaire label{
+    font-size: 1.5em;
+    color: #333;
+}
+.formulaire input{
+    width: 100%;
+    padding: 15px;
+}
+.formulaire textarea{
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+}
+input[type=submit]{
+    font-size: 1.5em;
+    border: 1px solid #999;
+    text-transform: uppercase;
+    background-color: #333;
+    color: #a9a9a9;
+    border-radius:3px;
+}
+
+/************* FOOTER *************/
+
+.footer{
+    background-color:#222;
+    display: flex;
+    color:#999;
+    justify-content: space-between;
+}
+/*** MENU DU FOOTER (MILIEU)  ****/ 
+.footer div{
+    width: 33%;
+    padding: 20px;
+}
+.footer-menu li{
+    display: flex;
+}
+.footer-menu a{
+    color:#999;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/*********  LOGO FOOTER **********/
+
+.reseaux{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    color:#fff;
+    margin:10px 0 0 3px;
+    transition: all 0.3s ease;
+}
+
+.facebook{
+    background-color: #3B5998;
+}
+.facebook:hover{
+    background-color:#fff;
+    color: #3b5998;    
+}
+.twitter{
+    background-color: #1DA1F2;
+}
+.twitter:hover{
+     background-color:#fff;
+    color: #1da1f2;
+}
+
+.google{
+    background-color: #DD4B3E;
+}
+.google:hover{
+     background-color:#fff;
+    color: #dd4b3e;
+}
+.youtube{
+    background-color: #C22226;
+}
+
+.youtube:hover{
+    background-color:#fff;
+    color: #c22226;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:300px) and  (max-width:840px){
+    
+    /*** PARTIE HEADER *****/
+    
+    .header, .connexion, .header-titre{
+        width: 100%;
+    }
+    .header-titre{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-titre h1{
+        font-size: 2.5em;
+    }
+    
+    .sous-header{
+        flex-direction: column;
+    }
+    
+    .nav-header ul{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    .nav-header a{
+        padding: 15px 0;
+    }
+    .connexion ul{
+        justify-content: center;
+    }
+    
+    /**** PARTIE FOOTER *****/
+    
+    .footer{
+       flex-direction: column;
+    }
+    .footer div{
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-menu li{
+        justify-content: center;  
+    }
+    
+    
+    /***** CORPS (PAGE ACCUEIL) *****/
+    .conteneur, .info, .gamme-voiture{
+        width: 100%;
+    }
+    .info{
+        padding: 25px;
+    }
+    .info h1{
+        font-size: 2em;
+    }
+    .gamme{
+        padding: 0 7px;
+    }
+    .gamme-voiture{
+        padding: 15px;
+    }
+    
+    
+    /***** CORPS ( PAGE PRODUITS) *******/
+    .conteneur-produit{
+        width: 100%;
+        flex-direction: column;
+        padding: 10px 25px;
+    }
+    .section-produit{
+        width: 100%;
+    }
+    .article-produit{
+        flex-direction: column;
+    }
+    .article-produit aside{
+        width: 100%;
+        padding: 15px;
+    }
+    /**** PARTIE SECTION INFO ( PAGE PRODUITS) *****/
+    .section-info{
+        width: 100%;
+    }
+
+    /************** CORPS (PAGE HISTOIRE) *********/
+    
+    .titre-histoire h1{
+        font-size: 2em;
+    }
+    
+    /******** CORPS ( PAGE CONTACT) ********/
+    
+    .formulaire{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .titre-contact h1{
+        font-size: 2em;
+    }
+    
+}
+
+@media screen and (min-width:840px) and  (max-width:1180px){
+    
+    /****** CORPS  ( PAGE PRODUIT) ********/
+    .conteneur-produit{
+        width: 100%;
+        flex-direction: column;
+        padding:0 15px;
+    }
+    
+    .section-produit{
+        width: 100%;
+    }
+    
+    .section-info{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
